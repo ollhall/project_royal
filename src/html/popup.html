@@ -1,0 +1,79 @@
+<div class="popup-feedback popup" id="popup-feedback">
+    <div class="popup-feedback__wrapper wrapper">
+        <div class="popup-feedback__body">
+            <div class="popup-feedback__content popup__content">
+                <button class="popup-feedback__btn-close close-popup"></button>
+                <h1 class="popup-feedback__title">Звʼязатися з нами</h1>
+                <div class="popup-feedback__text">Зателефонуйте або залиште заявку</div>
+                <div class="popup-feedback__phones">
+                    <a class="popup-feedback__link" href="tel:+380973330073">8(097)333-00-73</a>
+                    <a class="popup-feedback__link" href="tel:+380953330073">8(095)333-00-73</a>
+                    <a class="popup-feedback__link" href="tel:+380933330073">8(093)333-00-73</a>
+                </div>
+                <div class="popup-feedback__form form">
+                    <form action="telegram.php" method="POST" id="form" class="form__body">
+                        <div class="form__item">
+                            <label for="formName" class="form__label">Імʼя *</label>
+                            <input id="formName" type="text" name="name" class="form__input" placeholder="Олег" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="formPhone" class="form__label">Номер телефону *</label>
+                            <input id="formPhone" type="tel" name="phone" class="form__input"
+                                placeholder="+38 (0__) ____ __ __" required>
+                        </div>
+                        <div class="form__item">
+                            <div class="checkbox">
+                                <input id="formAgreement" type="checkbox" name="agreement"
+                                    class="checkbox__input" required>
+                                <label for="formAgreement" class="checkbox__label"><span>Дозволяю використовувати мою
+                                        особисту інформацію</span></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="form__button button">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-rev popup" id="popup-rev">
+    <div class="popup-rev__wrapper wrapper">
+        <div class="popup-rev__body">
+            <div class="popup-rev__content popup__content">
+                <button class="popup-rev__btn-close close-popup"></button>
+                <h1 class="popup-rev__title">Залишити відгук</h1>
+                <div class="popup-rev__form form">
+                    <form action="telegram.php" method="POST" id="form" class="form__body">
+                        <div class="form__item">
+                            <label for="formName" class="form__label">Імʼя *</label>
+                            <input id="formName" type="text" name="name" class="form__input" placeholder="Олег" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="formMessage" class="form__label">Опис *</label>
+                            <textarea name="message" id="formMessage" class="form__input" placeholder="Напишіть свій відгук"
+                              required></textarea>
+                          </div>
+                        <button type="submit" class="form__button button">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-phone popup" id="popup-phone">
+    <div class="popup-phone__wrapper wrapper">
+        <div class="popup-phone__body">
+            <div class="popup-phone__content popup__content">
+                <button class="popup-phone__btn-close close-popup"></button>
+                <h1 class="popup-phone__title">Зателефонуйте нам</h1>
+                <div class="popup-phone__phones">
+                    <a class="popup-phone__phone" href="tel:+380973330073">097-333-00-73</a>
+                    <a class="popup-phone__phone" href="tel:+380953330073">095-333-00-73</a>
+                    <a class="popup-phone__phone" href="tel:+380933330073">093-333-00-73</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

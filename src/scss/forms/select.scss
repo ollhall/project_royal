@@ -1,0 +1,66 @@
+// SELECT ======================================================================================
+
+.dropdown {
+    position: relative;
+    max-width: rem(50);
+    &__button {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        transition: color 0.3s ease 0s;
+        line-height: 160%; 
+        cursor: pointer;
+        &::before {
+            font-size: rem(6);
+            margin-left: rem(5);
+            transition: transform 0.3s ease 0s;
+        }
+        &--active {
+            &::before {
+                transform: rotate(-90deg);
+            }
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $mainBlue;
+            }
+        }
+    }
+    &__list {
+        display: grid;
+        gap: rem(5);
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease 0s;
+        position: absolute;
+        left: 0;
+        top: rem(25);
+        line-height: math.div(26, 16);
+        background: #fff;
+        overflow: hidden;
+        width: 100%;
+        z-index: 7;
+        border-radius: rem(7);
+        box-shadow: 0px rem(4) rem(21) rgba(198, 198, 198, 0.25);
+    }
+    &__list--visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    &__list-item {
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: color 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $mainBlue;
+            }
+        }
+    }
+    &__input-hidden {
+        display: none;
+    }
+}

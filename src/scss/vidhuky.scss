@@ -1,0 +1,80 @@
+.rev {
+    // .rev__container
+
+    &__container {
+    }
+
+    // .rev__title
+
+    &__title {
+        @include adaptiv-value("margin-top", 40, 24, 1);
+        @include adaptiv-value("margin-bottom", 40, 24, 1);
+    }
+
+    // .rev__text
+
+    &__text {
+        line-height: 160%;
+        @include adaptiv-value("margin-bottom", 64, 32, 1);
+    }
+
+    // .rev__item
+
+    &__item {
+        height: 100%;
+        @include adaptiv-value("padding-top", 32, 24, 1);
+        @include adaptiv-value("padding-right", 24, 16, 1);
+        @include adaptiv-value("padding-bottom", 32, 24, 1);
+        @include adaptiv-value("padding-left", 24, 16, 1);
+        background-color: $mainWhite;
+    }
+}
+.item-rev {
+    &__top {
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+    &__name {
+        font-size: rem(24);
+        font-weight: 600;
+        line-height: 140%;
+    }
+    &__stars {
+        color: #ffb13b;
+        font-size: rem(18);
+    }
+    &__text {
+        line-height: 160%;
+        @media (max-width: $mobileSmall) {
+            max-height: rem(182);
+            overflow: auto;
+            overflow-x: hidden;
+            padding-right: rem(5);
+            &::-webkit-scrollbar {
+                height: rem(10);
+                width: rem(3);
+                background: rgba(32, 32, 32, 0.3);
+            }
+            &::-webkit-scrollbar-thumb {
+                background: $mainBlue;
+                -webkit-border-radius: 1ex;
+            }
+        }
+    }
+}
+
+.rev-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(16);
+    @media (max-width: $tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: em(700)) {
+        grid-template-columns: 1fr;
+    }
+}
+.rev-grid-item {
+}
+//=============================================

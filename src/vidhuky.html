@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head.html',{
+"title":""
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html',{})
+    <main class="page">
+      <section class="page__rev rev">
+        <div class="rev__container">
+          <nav class="main-top__breadcrumbs breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Головна</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__current">Відгуки</span>
+              </li>
+            </ul>
+          </nav>
+          <h1 class="rev__title title">Відгуки наших клієнтів</h1>
+          <div class="rev__text">
+            <p>
+              Ви можете почитати відгуки клієнтів, які вже співпрацювали з компанією ЛЮКС ПЕРЕЇЗД. Це допоможе Вам
+              зрозуміти наскільки оперативно, якісно та відповідально працює наша команда.
+            </p>
+          </div>
+          <ul class="rev-grid">
+            <li class="rev-grid-item">
+              <article class="rev__item item-rev">
+                <div class="item-rev__top">
+                  <div class="item-rev__name">Олена</div>
+                  <div class="item-rev__stars">★★★★★</div>
+                </div>
+                <div class="item-rev__text">
+                  Чудово! Моє ліжко тепер таке нове. Дякую за глибоке чищення матраца та професійний підхід!
+                </div>
+              </article>
+            </li>
+            <li class="rev-grid-item">
+              <article class="rev__item item-rev">
+                <div class="item-rev__top">
+                  <div class="item-rev__name">Андрій</div>
+                  <div class="item-rev__stars">★★★★★</div>
+                </div>
+                <div class="item-rev__text">
+                  Дивовижна хімчистка матраців! Результат перевершив очікування, а ціна виявилася більш ніж розумною.
+                  Рекомендую!"
+                </div>
+              </article>
+            </li>
+            <li class="rev-grid-item">
+              <article class="rev__item item-rev">
+                <div class="item-rev__top">
+                  <div class="item-rev__name">Марія</div>
+                  <div class="item-rev__stars">★★★★★</div>
+                </div>
+                <div class="item-rev__text">
+                  Команда експертів впоралася на 5+! Матрац виглядає і пахне свіжістю. Дякуємо за турботу про моє
+                  здоров'я!
+                </div>
+              </article>
+            </li>
+            <li class="rev-grid-item">
+              <article class="rev__item item-rev">
+                <div class="item-rev__top">
+                  <div class="item-rev__name">Олена Шарій</div>
+                  <div class="item-rev__stars">★★★★★</div>
+                </div>
+                <div class="item-rev__text">
+                  Клінери з компанії Royal Clean швидко та якісно прибрали наші три кабінети офісу після ремонту. Вже
+                  наступного дня ми змогли завезти техніку та документи, щоб розпочати роботу. Вдячні майстрам за
+                  професіоналізм. Співпрацюватимемо на постійній основі.
+                </div>
+              </article>
+            </li>
+            <li class="rev-grid-item">
+              <article class="rev__item item-rev">
+                <div class="item-rev__top">
+                  <div class="item-rev__name">Сергій Архипенко</div>
+                  <div class="item-rev__stars">★★★★★</div>
+                </div>
+                <div class="item-rev__text">
+                  Закінчили ремонт у шоу-румі, але на збирання сил не залишилося. І тут на допомогу прийшли клінери
+                  (рекомендували друзі). Навіть не думали, що можна так швидко і круто навести лад у такому великому
+                  приміщенні. Дякую за чудову роботу. Вже з понеділка чекатимемо перших покупців.
+                </div>
+              </article>
+            </li>
+            <li class="rev-grid-item">
+              <article class="rev__item item-rev">
+                <div class="item-rev__top">
+                  <div class="item-rev__name">Олександра Сивош</div>
+                  <div class="item-rev__stars">★★★★★</div>
+                </div>
+                <div class="item-rev__text">
+                  Планували переїзд до нового офісу, який виявився зовсім не новим та доволі брудним. Самі взятися за
+                  генеральне прибирання не наважилися, викликали клінерів. І не пошкодували. Приміщення буквально
+                  засяяли чистотою та свіжістю. Вже замовили машину, щоби перевезти речі. Як добре, коли є такі
+                  професіонали!
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="page__contact contact">
+        <div class="contact__container">
+          <div class="contact__body">
+            <div class="contact__content">
+              <h3 class="contact__title">Залишити відгук</h3>
+              <div class="contact__text">
+                <p>
+                  Уже скористалися нашими послугами? Будь ласка, залиште відгук, щоб ми могли працювати над якістю наших
+                  послуг та покращувати їх!
+                </p>
+              </div>
+            </div>
+            <form class="contact__form form" action="#">
+              <div class="form__item">
+                <label for="formName" class="form__label">Імʼя *</label>
+                <input id="formName" type="text" name="name" class="form__input" placeholder="Олег" required>
+              </div>
+              <div class="form__item">
+                <label for="formMessage" class="form__label">Опис *</label>
+                <textarea name="message" id="formMessage" class="form__input" placeholder="Напишіть свій відгук"
+                  required></textarea>
+              </div>
+              <button type="submit" class="form__button button">Надіслати</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html',{})
+  </div>
+  @@include('html/popup.html',{})
+
+  <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

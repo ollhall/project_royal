@@ -1,0 +1,161 @@
+// ЗАГОЛОВКИ, ОБЩИЕ БЭМ БЛОКИ и прочее....
+
+//<ОСНОВНОЙ БЛОК>===========================================
+.page {
+    // .page__cleaning
+
+    &__cleaning {
+        @include adaptiv-value("padding-top", 113, 93, 1);
+        @include adaptiv-value("margin-bottom", 73, 40, 1);
+    }
+    // .page__inform
+
+    &__inform {
+        @include adaptiv-value("margin-bottom", 100, 40, 1);
+    }
+    // .page__why-us
+
+    &__why-us {
+        @include adaptiv-value("margin-bottom", 100, 40, 1);
+    }
+    // .page__how
+
+    &__how {
+        @include adaptiv-value("margin-bottom", 100, 40, 1);
+    }
+    // .page__enters-main
+
+    &__enters-main {
+        @include adaptiv-value("margin-bottom", 80, 40, 1);
+    }
+    // .page__enters-second
+
+    &__enters-second {
+        @include adaptiv-value("margin-bottom", 80, 40, 1);
+    }
+    // .page__enters-third
+
+    &__enters-third {
+        @include adaptiv-value("margin-bottom", 80, 40, 1);
+    }
+    // .page__reviews
+
+    &__reviews {
+        @include adaptiv-value("margin-bottom", 80, 40, 1);
+    }
+    // .page__accordion
+
+    &__accordion {
+        @include adaptiv-value("margin-bottom", 80, 40, 1);
+    }
+
+    // .page__other
+
+    &__other {
+        @include adaptiv-value("margin-bottom", 80, 40, 1);
+    }
+
+    // .page__block-info
+    &__block-info {
+        @include adaptiv-value("margin-bottom", 80, 40, 1);
+    }
+    // .page__work-first
+
+    &__work-first {
+        @include adaptiv-value("margin-bottom", 80, 40, 1);
+    }
+    &__work-second {
+        @include adaptiv-value("margin-bottom", 80, 40, 1);
+    }
+    // .page__inform-duble
+
+    &__inform-duble {
+        @include adaptiv-value("margin-bottom", 80, 40, 1);
+    }
+    // .page__contact
+
+    &__contact {
+        @include adaptiv-value("margin-bottom", 80, 40, 1);
+    }
+    // .page__work-third
+
+    &__work-third {
+        @include adaptiv-value("margin-bottom", 80, 40, 1);
+    }
+    &__rev {
+        @include adaptiv-value("padding-top", 113, 93, 1);
+        @include adaptiv-value("margin-bottom", 73, 40, 1);
+    }
+}
+//</ОСНОВНОЙ БЛОК>===========================================
+
+//=============================================================
+.footer-title {
+    color: $mainWhite;
+    font-weight: 600;
+    line-height: 160%;
+    &:not(:last-child) {
+        margin-bottom: rem(8);
+    }
+}
+.title {
+    color: $mainColor;
+    @include adaptiv-value("font-size", 48, 28, 1);
+    font-weight: 700;
+    line-height: 120%;
+}
+//=============================================================
+.arrow {
+    &.swiper-button-disabled {
+        &::before{
+            cursor: default;
+            color: #d9dada;
+        }
+     
+    }
+}
+//=============================================================
+.breadcrumbs {
+    white-space: nowrap;
+    overflow: auto;
+    height: rem(25);
+    // .breadcrumbs__list
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    // .breadcrumbs__item
+
+    &__item {
+        font-size: rem(14);
+        color: #a6a6a6;
+    }
+
+    // .breadcrumbs__link
+
+    &__link {
+        display: flex;
+        align-items: center;
+
+        transition: color 0.3s ease 0s;
+        &::after {
+            content: "»";
+            font-size: rem(20);
+            margin: 0 em(8, 20);
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                color: $mainBlue;
+            }
+        }
+    }
+
+    // .breadcrumbs__current
+
+    &__current {
+        color: $mainColor;
+    }
+}
+//===========================================

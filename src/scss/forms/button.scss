@@ -1,0 +1,52 @@
+.button {
+    display: flex;
+    width: rem(280);
+    height: rem(56);
+    justify-content: center;
+    align-items: center;
+    background-color: $mainBlue;
+    color: $mainWhite;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: transparent;
+            border: rem(2) solid $mainBlue;
+            color: $mainBlue;
+        }
+    }
+    // .button_white
+
+    &_white {
+        display: flex;
+        width: rem(280);
+        height: rem(56);
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        color: $mainBlue;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 600;
+        border: rem(2) solid $mainBlue;
+        transition: all 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $mainBlue;
+                color: $mainWhite;
+            }
+        }
+    }
+}
+
+.show-more {
+    &__btn {
+        color: $mainBlue;
+        font-size: rem(14);
+        font-weight: 600;
+        line-height: 120%;
+        margin-top: rem(24);
+    }
+}

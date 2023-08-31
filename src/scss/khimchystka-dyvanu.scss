@@ -1,0 +1,167 @@
+.work-third {
+    // .work-third__container
+
+    &__container {
+    }
+    &__title {
+        @include adaptiv-value("margin-bottom", 40, 24, 1);
+    }
+    // .work-third__body
+
+    &__body {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            @include adaptiv-value("width", 1064, 10, 1);
+            height: rem(340);
+            background-image: url(../img/path.svg);
+            background-repeat: no-repeat;
+            top: rem(100);
+            left: rem(110);
+        }
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+
+    // .work-third__row-top
+
+    &__row-top {
+        @media (min-width: $tablet) {
+            counter-reset: my-count;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: rem(20);
+            margin-bottom: rem(20);
+        }
+    }
+    // .work-third__row-bottom
+
+    &__row-bottom {
+        @media (min-width: $tablet) {
+            counter-reset: my-counter;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: end;
+        }
+    }
+    &__swiper {
+        counter-reset: my-count;
+    }
+    &__slide {
+        height: auto;
+    }
+    // .work-third__item
+
+    &__item {
+        background-color: $mainWhite;
+        display: flex;
+        flex-direction: column;
+        gap: rem(8);
+        @media (min-width: $tablet) {
+            @include adaptiv-value("width", 366, 10, 1);
+            position: relative;
+            @include adaptiv-value("padding", 24, 16, 1);
+            position: relative;
+            margin-left: rem(20);
+            margin-top: rem(20);
+            &::before {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $mainBlue;
+                font-size: rem(24);
+                font-weight: 600;
+                width: rem(40);
+                height: rem(40);
+                border-radius: 50%;
+                background-color: #eef8ff;
+                left: rem(-20);
+                top: rem(-20);
+            }
+            &_1 {
+                &:first-child {
+                    counter-increment: my-count;
+                }
+
+                &:nth-child(2) {
+                    counter-increment: my-count 2;
+                }
+
+                &:nth-child(3) {
+                    counter-increment: my-count 2;
+                }
+                &::before {
+                    content: counter(my-count) "";
+                }
+            }
+
+            &_2 {
+                &:nth-child(1) {
+                    counter-increment: my-counter 2;
+                }
+
+                &:nth-child(2) {
+                    counter-increment: my-counter 2;
+                }
+                &::before {
+                    content: counter(my-counter) "";
+                }
+            }
+        }
+        @media (max-width: $tablet) {
+            position: relative;
+            padding-top: rem(10);
+            padding-right: rem(10);
+            padding-bottom: rem(10);
+            padding-left: rem(72);
+            height: 100%;
+            counter-increment: my-count;
+            &::before {
+                position: absolute;
+                content: counter(my-count) "";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $mainBlue;
+                font-size: rem(24);
+                font-weight: 600;
+                width: rem(40);
+                height: rem(40);
+                border-radius: 50%;
+                background-color: #eef8ff;
+                left: rem(16);
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+}
+.box-work-third{
+    display: none;
+    @media (max-width: $tablet) {
+        display: block;
+    }
+}
+.item-work-third {
+    &_2 {
+        @include adaptiv-value("margin-right", 100, 0, 1);
+    }
+    // .item-work-third__title
+
+    &__title {
+        @include adaptiv-value("font-size", 24, 20, 1);
+        font-weight: 600;
+        line-height: 140%;
+    }
+
+    // .item-work-third__text
+
+    &__text {
+        font-family: "Montserrat";
+        line-height: 160%;
+    }
+}
+//===================================

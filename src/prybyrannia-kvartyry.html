@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head.html',{
+"title":""
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html',{})
+    <main class="page" id="header">
+      <section class="page__cleaning cleaning">
+        <div class="cleaning__container">
+          <nav class="main-top__breadcrumbs breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Головна</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__current">Прибирання квартири</span>
+              </li>
+            </ul>
+          </nav>
+          <div class="cleaning__body">
+            <div class="cleaning__info info-cleaning">
+              <h1 class="info-cleaning__title title">Клінінг в Києві</h1>
+              <div class="info-cleaning__text">
+                <p>
+                  <span>Клінінгова компанія №1.</span> Надаємо допомогу у наведенні чистоти та порядку за доступною
+                  ціною.
+                </p>
+              </div>
+              <a class="info-cleaning__btn button popup-link" href="#popup-feedback">Замовити послугу</a>
+            </div>
+            <div class="cleaning__images images-cleaning">
+              <div class="images-cleaning__column column-images">
+                <div class="column-images__big-ibg">
+                  <img src="@img/cleaning/01.jpg" alt="Picture">
+                </div>
+                <div class="column-images__smoll-ibg">
+                  <img src="@img/cleaning/02.jpg" alt="Picture">
+                </div>
+
+              </div>
+              <div class="images-cleaning__column column-images">
+                <div class="column-images__smoll-ibg">
+                  <img src="@img/cleaning/03.jpg" alt="Picture">
+                </div>
+                <div class="column-images__big-ibg">
+                  <img src="@img/cleaning/04.jpg" alt="Picture">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__inform inform">
+        <div class="inform__container">
+          <div class="inform__body">
+            <div class="inform__images-ibg">
+              <img src="@img/inform/09.jpg" alt="Picture">
+            </div>
+            <div class="inform__content content-inform">
+              <h2 class="content-inform__title title">
+                Професійне прибирання квартири
+              </h2>
+              <div class="content-inform__text">
+                <p>
+                  Усім нам приємно та комфортно жити в чистій, доглянутій квартирі, де пахне свіжістю та затишком. Але
+                  прибирання не завжди приносить задоволення. Хтось просто не любить це заняття, а у когось немає часу
+                  наводити чистоту та красу, особливо якщо йдеться про велику, багатокімнатну квартиру з двома
+                  санвузлами.
+                </p>
+                <p>
+                  Сьогодні власникам квартир та будинків приходять на допомогу послуги клінінгових послуг. Навчені
+                  фахівці приїжджають до вас і за кілька годин упорядковують ваш житловий простір. Вони можуть забрати
+                  квартиру після ремонту, зробити базове прибирання, помити вікна і т.д. Делегувати нелюбі заняття дуже
+                  просто, а час, що звільнився, краще присвятити тому, що приносить радість.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__why-us why-us">
+        <div class="why-us__container">
+          <div class="why-us__top">
+            <h2 class="why-us__title title">Чому ми</h2>
+            <div class="why-us__controls why-us__controls_2">
+              <button type="button" class="why-us__arrow arrow why-us__arrow_left _icon-arrow-left"></button>
+              <button type="button" class="why-us__arrow arrow why-us__arrow_right _icon-arrow-right"></button>
+            </div>
+          </div>
+          <ul class="why-us-grid why-us-grid_2 why-us-grid-show">
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/01.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Професійність
+                  </h4>
+                  <p>
+                    Професійні прибиральники мають досвід і навички, які дозволяють їм ефективно використовувати
+                    правильні засоби та методи для видалення пилу, бруду та плям, забезпечуючи бездоганну чистоту
+                    без пошкодження поверхонь.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/02.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Якісні матеріали
+                  </h4>
+                  <p>
+                    Професіонали використовують сучасне обладнання та екологічно чисті продукти, які не лише
+                    ефективно прибирають, а й мінімізують вплив шкідливих хімічних речовин на здоров'я вас та вашої
+                    родини.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/06.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Сучасне обладнання
+                  </h4>
+                  <p>
+                    Це дозволяє в рази ефективніше впоратися з пилом та забрудненнями будь-якої складності, а також
+                    бактеріями та мікроорганізмами.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/05.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Піклування про здоров'я
+                  </h4>
+                  <p>
+                    Ми розуміємо, наскільки важлива безпека під час та після прибирання. Ми використовуємо безпечні для
+                    здоров'я засоби та методи, щоб використовувати їх без шкоди для ваших близьких.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/07.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Постійне восконалення
+                  </h4>
+                  <p>
+                    На основі відгуків клієнтів постійно працюємо над підвищенням рівня обслуговування, збільшуємо
+                    перелік послуг, що надаються.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/08.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Доступні ціни
+                  </h4>
+                  <p>
+                    Розцінки на послуги компанії цілком доступні та допомагають вам економити свій найбільш цінний
+                    ресурс – час. Плата за послугу здійснюється лише після того, як робота була схвалена.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/04.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Економія часу
+                  </h4>
+                  <p>
+                    Ви можете займатися своїми справами, поки наші майстри упорядковують ваш робочий простір. Клінери з
+                    досвідом виконають всю роботу якісно та швидко, щоб вам не довелося відволікатися від робочих
+                    питань.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/03.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Бездоганна якість результатів
+                  </h4>
+                  <p>
+                    Нашою головною метою є забезпечення найвищої якості прибирання. Ми гарантуємо, що ваш будинок і
+                    кожен його куточок буде сяяти чистотою
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/09.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Гнучкість
+                  </h4>
+                  <p>
+                    Незалежно від масштабу ремонту, наша компанія надає широкий спектр послуг. Ми також можемо підібрати
+                    до них будь-яку потребу.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/10.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Повне задоволення клієнтів
+                  </h4>
+                  <p>
+                    Ми пишаємося своєю репутацією і сподіваємося повністю задовольнити кожного клієнта. Ваше задоволення
+                    є метою для нас
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/11.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Прозорість та чесність
+                  </h4>
+                  <p>
+                    Ми цінуємо довіру, яка має значення, тому наші ціни та умови надання послуг завжди прозорі та чесні.
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <button class="show-more__btn show-more-why-us button_white">Більше переваг</button>
+          <div class="slader__box box-why-us box-why-us_2">
+            <div class="why-us__slider swiper">
+              <div class="why-us__swiper swiper-wrapper">
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/01.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Професійність
+                      </h4>
+                      <p>
+                        Професійні прибиральники мають досвід і навички, які дозволяють їм ефективно використовувати
+                        правильні засоби та методи для видалення пилу, бруду та плям, забезпечуючи бездоганну чистоту
+                        без пошкодження поверхонь.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/02.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Якісні матеріали
+                      </h4>
+                      <p>
+                        Професіонали використовують сучасне обладнання та екологічно чисті продукти, які не лише
+                        ефективно прибирають, а й мінімізують вплив шкідливих хімічних речовин на здоров'я вас та вашої
+                        родини.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/06.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Сучасне обладнання
+                      </h4>
+                      <p>
+                        Це дозволяє в рази ефективніше впоратися з пилом та забрудненнями будь-якої складності, а також
+                        бактеріями та мікроорганізмами.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/05.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Піклування про здоров'я
+                      </h4>
+                      <p>
+                        Ми розуміємо, наскільки важлива безпека під час та після прибирання. Ми використовуємо безпечні
+                        для здоров'я засоби та методи, щоб використовувати їх без шкоди для ваших близьких.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/07.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Постійне восконалення
+                      </h4>
+                      <p>
+                        На основі відгуків клієнтів постійно працюємо над підвищенням рівня обслуговування, збільшуємо
+                        перелік послуг, що надаються.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/08.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Доступні ціни
+                      </h4>
+                      <p>
+                        Розцінки на послуги компанії цілком доступні та допомагають вам економити свій найбільш цінний
+                        ресурс – час. Плата за послугу здійснюється лише після того, як робота була схвалена.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/04.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Економія часу
+                      </h4>
+                      <p>
+                        Ви можете займатися своїми справами, поки наші майстри упорядковують ваш робочий простір.
+                        Клінери з досвідом виконають всю роботу якісно та швидко, щоб вам не довелося відволікатися від
+                        робочих питань.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/03.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Бездоганна якість результатів
+                      </h4>
+                      <p>
+                        Нашою головною метою є забезпечення найвищої якості прибирання. Ми гарантуємо, що ваш будинок і
+                        кожен його куточок буде сяяти чистотою
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/09.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Гнучкість
+                      </h4>
+                      <p>
+                        Незалежно від масштабу ремонту, наша компанія надає широкий спектр послуг. Ми також можемо
+                        підібрати до них будь-яку потребу.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/10.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Повне задоволення клієнтів
+                      </h4>
+                      <p>
+                        Ми пишаємося своєю репутацією і сподіваємося повністю задовольнити кожного клієнта. Ваше
+                        задоволення є метою для нас
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/11.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Прозорість та чесність
+                      </h4>
+                      <p>
+                        Ми цінуємо довіру, яка має значення, тому наші ціни та умови надання послуг завжди прозорі та
+                        чесні.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__work-second work-second">
+        <div class="work-second__container">
+          <h2 class="work-second__title title">Як ми працюємо?</h2>
+          <div class="work-second__body">
+            <ol class="work-second__list">
+              <li class="work-second__item">
+                Перед тим як оформити заявку, вивчіть на нашому сайті всі послуги та позначте ті, які вам потрібні.
+              </li>
+              <li class="work-second__item">
+                Після обговорення деталей фахівці приїжджають на об'єкт з усіма необхідними засобами та обладнанням.
+              </li>
+              <li class="work-second__item">
+                Після закінчення прибирання Ви оцінюєте клінінг, і лише після схвалення роботи здійснюється плата за
+                послугу.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="page__reviews reviews">
+        <div class="reviews__container">
+
+          <div class="reviews__top">
+            <h2 class="reviews__title title">Відгуки</h2>
+            <div class="reviews__controls">
+              <button type="button" class="reviews__arrow arrow reviews__arrow_left _icon-arrow-left"></button>
+              <button type="button" class="reviews__arrow arrow reviews__arrow_right _icon-arrow-right"></button>
+            </div>
+          </div>
+
+          <div class="slader__box box-reviews">
+            <div class="reviews__slider swiper">
+              <div class="reviews__swiper swiper-wrapper">
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <article class="slide-reviews__item">
+                    <div class="slide-reviews__top">
+                      <div class="slide-reviews__name">Олена Шарій</div>
+                      <div class="slide-reviews__stars">★★★★★</div>
+                    </div>
+                    <div class="slide-reviews__text">
+                      Запрошували клінерів для збирання приміщення після косметичного ремонту. Двоє майстрів за три години привели квартиру в такий порядок, що ми не впізнали своєї оселі. Це просто неймовірно. Дякую фахівцям! Вони створили нам чудовий настрій для приємного клопоту з облаштування нашого затишного гніздечка. Рекомендуватимемо компанію своїм друзям.
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <article class="slide-reviews__item">
+                    <div class="slide-reviews__top">
+                      <div class="slide-reviews__name">Сергій Архипенко</div>
+                      <div class="slide-reviews__stars">★★★★★</div>
+                    </div>
+                    <div class="slide-reviews__text">
+                      Майстри з компанії Royal clean приємно здивували швидкістю та якістю збирання. Запрошували їх упорядкувати квартиру бабусі перед продажем. Коли брали роботу, були вражені, як змінився житловий простір. Навіть почали сумніватися, чи хочемо ми продавати спадщину нашої старенької. Щира подяка клінерам за таку чудову роботу!
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <article class="slide-reviews__item">
+                    <div class="slide-reviews__top">
+                      <div class="slide-reviews__name">Олександра Сивош</div>
+                      <div class="slide-reviews__stars">★★★★★</div>
+                    </div>
+                    <div class="slide-reviews__text">
+                      Давно не чистили килими та дивани. Але пил у них скупчився і, здається, з'явився пиловий кліщ. Дружина почала частіше кашляти та чхати. Викликали майстрів. Тепер у нас не тільки чисто і свіжо, а й меблі начебто заново перетягнуті. Дякуємо професіоналам за якість хімчистки та адекватні ціни.
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <article class="slide-reviews__item">
+                    <div class="slide-reviews__top">
+                      <div class="slide-reviews__name">Олена Шарій</div>
+                      <div class="slide-reviews__stars">★★★★★</div>
+                    </div>
+                    <div class="slide-reviews__text">
+                      Запрошували клінерів для збирання приміщення після косметичного ремонту. Двоє майстрів за три години привели квартиру в такий порядок, що ми не впізнали своєї оселі. Це просто неймовірно. Дякую фахівцям! Вони створили нам чудовий настрій для приємного клопоту з облаштування нашого затишного гніздечка. Рекомендуватимемо компанію своїм друзям.
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews__buttons">
+            <a class="reviews__btn button_white" href="vidhuky.html">Всі відгуки</a>
+            <a class="reviews__btn button popup-link" href="#popup-rev">Залишити відгук</a>
+          </div>
+
+        </div>
+      </section>
+      <section class="page__accordion accordion">
+        <div class="accordion__container">
+          <h2 class="accordion__title title">Поширені питання</h2>
+
+          <div class="accordion__body">
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Чим відрізняється прибирання після закінчення
+                  ремонту від генерального?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Використовуються різні засоби та склади. Наголошується на усуненні будівельного пилу, складних
+                      забруднень, винесення сміття, більш ретельне миття вікон. Також буде відрізнятись і ціна за ці
+                      послуги.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Як часто потрібно проводити базове та
+                  генеральне прибирання?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Використовуються різні засоби та склади. Наголошується на усуненні будівельного пилу, складних
+                      забруднень, винесення сміття, більш ретельне миття вікон. Також буде відрізнятись і ціна за ці
+                      послуги.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Чи можу я окремо замовити миття вікон, якщо у
+                  мене великі панорамні вікна?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Використовуються різні засоби та склади. Наголошується на усуненні будівельного пилу, складних
+                      забруднень, винесення сміття, більш ретельне миття вікон. Також буде відрізнятись і ціна за ці
+                      послуги.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Які приміщення ви прибираєте?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Використовуються різні засоби та склади. Наголошується на усуненні будівельного пилу, складних
+                      забруднень, винесення сміття, більш ретельне миття вікон. Також буде відрізнятись і ціна за ці
+                      послуги.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Чи потрібно мені самому купувати побутову
+                  хімію, мочалки, серветки, ганчірки для ваших фахівців?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Використовуються різні засоби та склади. Наголошується на усуненні будівельного пилу, складних
+                      забруднень, винесення сміття, більш ретельне миття вікон. Також буде відрізнятись і ціна за ці
+                      послуги.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Від чого залежить вартість збирання
+                  квартир?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Використовуються різні засоби та склади. Наголошується на усуненні будівельного пилу, складних
+                      забруднень, винесення сміття, більш ретельне миття вікон. Також буде відрізнятись і ціна за ці
+                      послуги.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Як я можу замовити послугу у
+                  компанії?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Використовуються різні засоби та склади. Наголошується на усуненні будівельного пилу, складних
+                      забруднень, винесення сміття, більш ретельне миття вікон. Також буде відрізнятись і ціна за ці
+                      послуги.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__other other">
+        <div class="other__container">
+          <div class="other__top">
+            <h2 class="other__title title">Інші послуги</h2>
+            <div class="other__controls">
+              <button type="button" class="other__arrow arrow other__arrow_left _icon-arrow-left"></button>
+              <button type="button" class="other__arrow arrow other__arrow_right _icon-arrow-right"></button>
+            </div>
+          </div>
+          <div class="slader__box box-other">
+            <div class="other__slider swiper">
+              <div class="other__swiper swiper-wrapper">
+                <div class="other__slide swiper-slide">
+                  <article class="other__item item-other">
+                    <div class="item-other__images">
+                      <img src="@img/other/01.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Прибирання офісів</h4>
+                  </article>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <article class="other__item item-other">
+                    <div class="item-other__images">
+                      <img src="@img/other/02.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Прибирання домів</h4>
+                  </article>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <article class="other__item item-other">
+                    <div class="item-other__images">
+                      <img src="@img/other/03.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Прибирання після ремонту</h4>
+                  </article>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <article class="other__item item-other">
+                    <div class="item-other__images">
+                      <img src="@img/other/04.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Генеральне прибирання</h4>
+                  </article>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <article class="other__item item-other">
+                    <div class="item-other__images">
+                      <img src="@img/other/05.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Мийка вікон</h4>
+                  </article>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <article class="other__item item-other">
+                    <div class="item-other__images">
+                      <img src="@img/other/06.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Хімчистка диванів</h4>
+                  </article>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <article class="other__item item-other">
+                    <div class="item-other__images">
+                      <img src="@img/other/07.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Хімчистка матрасів</h4>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="other-grid">
+            <li class="other-grid__item">
+              <article class="other__item item-other">
+                <div class="item-other__images">
+                  <img src="@img/other/01.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Прибирання офісів</h4>
+              </article>
+            </li>
+            <li class="other-grid__item">
+              <article class="other__item item-other">
+                <div class="item-other__images">
+                  <img src="@img/other/02.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Прибирання домів</h4>
+              </article>
+            </li>
+            <li class="other-grid__item">
+              <article class="other__item item-other">
+                <div class="item-other__images">
+                  <img src="@img/other/03.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Прибирання після ремонту</h4>
+              </article>
+            </li>
+            <li class="other-grid__item">
+              <article class="other__item item-other">
+                <div class="item-other__images">
+                  <img src="@img/other/04.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Генеральне прибирання</h4>
+              </article>
+            </li>
+            <li class="other-grid__item">
+              <article class="other__item item-other">
+                <div class="item-other__images">
+                  <img src="@img/other/05.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Мийка вікон</h4>
+              </article>
+            </li>
+            <li class="other-grid__item">
+              <article class="other__item item-other">
+                <div class="item-other__images">
+                  <img src="@img/other/06.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Хімчистка диванів</h4>
+              </article>
+            </li>
+            <li class="other-grid__item">
+              <article class="other__item item-other">
+                <div class="item-other__images">
+                  <img src="@img/other/07.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Хімчистка матрасів</h4>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="page__block-info block-info">
+        <div class="block-info__container">
+          <h2 class="block-info__title title">Що буде, якщо не прибирати квартиру?</h2>
+          <div class="block-info__content content-block-info">
+            <p>
+              Чистота в будинку насамперед пов'язана з нашим здоров'ям та настроєм. Присутність пилу може викликати
+              легеневі захворювання та алергічні реакції. Також можливі швидка стомлюваність, сонливість, постійна
+              напруга. Достаток бактерій і мікроорганізмів призводять до проблем із шлунково-кишкового тракту, різних
+              розладів та запалень. Постійно брудна, недоглянута квартира викликає у її власників пригнічений, близький
+              до депресії стан
+            </p>
+            <p>
+              Саме тому важливо підтримувати порядок та чистоту там, де ми живемо. І якщо зовсім дискомфортно виділяти
+              кілька годин на прибирання, потрібно звертатися до професіоналів, які за розумну плату зроблять з вашого
+              будинку сяючий, ароматний простір, в якому хочеться жити і творити день у день.
+            </p>
+            <h4>Види клінінгових послуг</h4>
+            <p>
+              Сучасні послуги постійно працюють над розширенням комплексу послуг, щоб клієнт отримував максимум комфорту
+              і не переживав, що його обдурять або нададуть неякісне обслуговування. Сьогодні ми пропонуємо користувачам
+              такі види прибирання у квартирах: базова (підтримуюча), генеральна та після ремонту. Є й додаткові опції,
+              а саме:
+            </p>
+            <ul>
+              <li>
+                чищення килимових покриттів;
+              </li>
+              <li>
+                хімчистка меблів;
+              </li>
+              <li>
+                миття віконного скла та рам.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html',{})
+  </div>
+  @@include('html/popup.html',{})
+  @@include('html/phone-button.html',{})
+
+  <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

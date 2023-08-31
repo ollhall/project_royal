@@ -1,0 +1,89 @@
+@media (max-width: $mobileSmall) {
+    .why-us-grid__item-show:nth-child(n + 4) {
+        display: none;
+    }
+    .why-us-grid__item-show.is-visible {
+        display: block;
+    }
+}
+
+.show-more-why-us {
+    display: none;
+    @media (max-width: $mobileSmall) {
+        display: flex;
+        width: 100%;
+    }
+}
+//===================================
+.work-second {
+    // .work-first__container
+
+    &__container {
+    }
+
+    // .work-first__title
+
+    &__title {
+        @include adaptiv-value("margin-bottom", 40, 24, 1);
+    }
+
+    // .work-first__body
+
+    &__body {
+        line-height: 160%;
+    }
+
+    // .work-first__list
+
+    &__list {
+        counter-reset: my-counter;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: rem(16);
+        &:not(:last-child) {
+            margin-top: rem(12);
+            margin-bottom: rem(16);
+        }
+        @media (max-width: $mobile) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // .work-first__item
+
+    &__item {
+        @include adaptiv-value("padding-top", 24, 16, 0);
+        @include adaptiv-value("padding-right", 24, 16, 0);
+        @include adaptiv-value("padding-bottom", 24, 16, 0);
+        @include adaptiv-value("padding-left", 96, 65, 0);
+
+        counter-increment: my-counter;
+        position: relative;
+
+        background-color: $mainWhite;
+        h4 {
+            @include adaptiv-value("font-size", 24, 20, 1);
+            font-weight: 600;
+            line-height: 140%;
+            margin-bottom: em(8, 24);
+        }
+        &::before {
+            content: counter(my-counter) "";
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $mainBlue;
+            font-size: rem(24);
+            font-weight: 600;
+            width: rem(48);
+            height: rem(48);
+            border-radius: 50%;
+            background-color: #eef8ff;
+            @include adaptiv-value("left", 24, 10, 0);
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+}
+//===================================

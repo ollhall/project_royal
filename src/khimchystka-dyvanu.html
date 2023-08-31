@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="uk">
+@@include('html/head.html',{
+"title":""
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html',{})
+    <main class="page" id="header">
+      <section class="page__cleaning cleaning">
+        <div class="cleaning__container">
+          <nav class="main-top__breadcrumbs breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Головна</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__current">Хімчистка дивану</span>
+              </li>
+            </ul>
+          </nav>
+          <div class="cleaning__body">
+            <div class="cleaning__info info-cleaning">
+              <h1 class="info-cleaning__title title">Клінінг в Києві</h1>
+              <div class="info-cleaning__text">
+                <p>
+                  <span>Клінінгова компанія №1.</span> Надаємо допомогу у наведенні чистоти та порядку за доступною
+                  ціною.
+                </p>
+              </div>
+              <a class="info-cleaning__btn button popup-link" href="#popup-feedback">Замовити послугу</a>
+            </div>
+            <div class="cleaning__images images-cleaning">
+              <div class="images-cleaning__column column-images">
+                <div class="column-images__big-ibg">
+                  <img src="@img/cleaning/01.jpg" alt="Picture">
+                </div>
+                <div class="column-images__smoll-ibg">
+                  <img src="@img/cleaning/02.jpg" alt="Picture">
+                </div>
+
+              </div>
+              <div class="images-cleaning__column column-images">
+                <div class="column-images__smoll-ibg">
+                  <img src="@img/cleaning/03.jpg" alt="Picture">
+                </div>
+                <div class="column-images__big-ibg">
+                  <img src="@img/cleaning/04.jpg" alt="Picture">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__inform inform">
+        <div class="inform__container">
+          <div class="inform__body">
+            <div class="inform__images-ibg">
+              <img src="@img/inform/11.jpg" alt="Picture">
+            </div>
+            <div class="inform__content content-inform">
+              <h2 class="content-inform__title title">
+                Навіщо потрібна хімчистка диванів?
+              </h2>
+              <div class="content-inform__text">
+                <p>
+                  Ваш диван – це не тільки затишне місце для відпочинку, але й предмет, який зазнає щоденного зносу та
+                  руйнування. Звичне прибирання пилососом та чищення плям ручними методами не завжди дійсно ефективні та
+                  якісно очищають диван. Тканина вбирає пил, мікроби, запахи та інші прояви, які з часом можуть
+                  викликати алергію та неприємні запахи.
+                </p>
+                <p>
+                  Але не впадайте у відчай! З професійною послугою "Хімчистка диванів" від нашої клінінгової компанії
+                  ваш диван стає знову чистим, свіжим та новим. Хімчистка диванів – це ключовий крок до вишуканості та
+                  комфорту у майбутньому будинку.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__why-us why-us">
+        <div class="why-us__container">
+          <div class="why-us__top">
+            <h2 class="why-us__title title">Переваги</h2>
+            <div class="why-us__controls why-us__controls_2">
+              <button type="button" class="why-us__arrow arrow why-us__arrow_left _icon-arrow-left"></button>
+              <button type="button" class="why-us__arrow arrow why-us__arrow_right _icon-arrow-right"></button>
+            </div>
+          </div>
+          <ul class="why-us-grid why-us-grid_2 why-us-grid-show">
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/01.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Професійний підхід
+                  </h4>
+                  <p>
+                    Наші фахівці пройшли навчання та мають багатий досвід у галузі хімчистки диванів. Ми працюємо з
+                    місцевими типами тканин і знаємо, як правильно та безпечно проводити перевірку.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/12.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Глибоке очищення
+                  </h4>
+                  <p>
+                    Процес хімчистки працює навіть у найважчих випадках, включаючи плями від кави, вина, олії тощо. Ми
+                    використовуємо спеціалізовані миючі засоби, які ефективно розкладають та видаляють бруд, не завдаючи
+                    шкоди тканині.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/13.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Безпека та гігієна
+                  </h4>
+                  <p>
+                    Наші миючі засоби абсолютно безпечні для вашого будинку та здоров'я. Ми гарантуємо, що після
+                    процедури хімчистки диван буде абсолютно без слідів зростання, а в передбачуваній перспективі це
+                    покращення якості повітря в майбутньому будинку.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/14.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Усунення запахів
+                  </h4>
+                  <p>
+                    Не доводиться більше миритися з неприємними запахами на дивані, що наближається. Хімічна чистка
+                    дозволяє не поширюватися запахів свійських тварин та навколишнього середовища.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item why-us-grid__item-show">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/04.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Продовження терміну служби
+                  </h4>
+                  <p>
+                    Регулярна хімчистка дивана не тільки підтримує його в ідеальному стані, а й подовжує його термін
+                    служби. Ви заощадите гроші на ремонті та заміні меблів у майбутньому.
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <button class="show-more__btn show-more-why-us button_white">Більше переваг</button>
+          <div class="slader__box box-why-us box-why-us_2">
+            <div class="why-us__slider swiper">
+              <div class="why-us__swiper swiper-wrapper">
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/01.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Професійний підхід
+                      </h4>
+                      <p>
+                        Наші фахівці пройшли навчання та мають багатий досвід у галузі хімчистки диванів. Ми працюємо з
+                        місцевими типами тканин і знаємо, як правильно та безпечно проводити перевірку.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/12.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Глибоке очищення
+                      </h4>
+                      <p>
+                        Процес хімчистки працює навіть у найважчих випадках, включаючи плями від кави, вина, олії тощо.
+                        Ми використовуємо спеціалізовані миючі засоби, які ефективно розкладають та видаляють бруд, не
+                        завдаючи шкоди тканині.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/13.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Безпека та гігієна
+                      </h4>
+                      <p>
+                        Наші миючі засоби абсолютно безпечні для вашого будинку та здоров'я. Ми гарантуємо, що після
+                        процедури хімчистки диван буде абсолютно без слідів зростання, а в передбачуваній перспективі це
+                        покращення якості повітря в майбутньому будинку.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/14.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Усунення запахів
+                      </h4>
+                      <p>
+                        Не доводиться більше миритися з неприємними запахами на дивані, що наближається. Хімічна чистка
+                        дозволяє не поширюватися запахів свійських тварин та навколишнього середовища.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/04.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Продовження терміну служби
+                      </h4>
+                      <p>
+                        Регулярна хімчистка дивана не тільки підтримує його в ідеальному стані, а й подовжує його термін
+                        служби. Ви заощадите гроші на ремонті та заміні меблів у майбутньому.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__work-third work-third">
+        <div class="work-third__container">
+          <h2 class="work-third__title title">Як ми працюємо</h2>
+          <div class="work-third__body">
+            <div class="work-third__row-top">
+              <article class="work-third__item work-third__item_1 item-work-third">
+                <h4 class="item-work-third__title">
+                  Детальний огляд
+                </h4>
+                <div class="item-work-third__text">
+                  Наші фахівці проводять детальний огляд, визначають ступінь тяжкості та вибирають найкращий спосіб
+                  хімчистки.
+                </div>
+              </article>
+              <article class="work-third__item work-third__item_1 item-work-third">
+                <h4 class="item-work-third__title">
+                  Хімічна чистка
+                </h4>
+                <div class="item-work-third__text">
+                  Професійні миючі засоби наносяться на поверхню, залишаються на час для розкладання бруду, а потім
+                  ретельно видаляються разом із забрудненнями.
+                </div>
+              </article>
+              <article class="work-third__item work-third__item_1 item-work-third">
+                <h4 class="item-work-third__title">
+                  Фінальна перевірка
+                </h4>
+                <div class="item-work-third__text">
+                  Ми провели остаточну перевірку, щоб переконатися, що диван є чистим і гарантованим.
+                </div>
+              </article>
+            </div>
+            <div class="work-third__row-bottom">
+              <article class="work-third__item work-third__item_2 item-work-third">
+                <h4 class="item-work-third__title">
+                  Підготовка
+                </h4>
+                <div class="item-work-third__text">
+                  Ми готуємо поверхню дивана, захищаємо навколишні предмети та підлогу, щоб уникнути пошкоджень.
+                </div>
+              </article>
+              <article class="work-third__item work-third__item_2  item-work-third item-work-third_2">
+                <h4 class="item-work-third__title">
+                  Сушка та вентиляція
+                </h4>
+                <div class="item-work-third__text">
+                  Після хімчистки просушуємо та провітрюємо диван, щоб уникнути утворення плісняви та неприємних
+                  запахів.
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="slader__box box-work-third">
+          <div class="work-third__slider swiper">
+            <div class="work-third__swiper swiper-wrapper">
+               <div class="work-third__slide swiper-slide">
+                <article class="work-third__item item-work-third">
+                  <h4 class="item-work-third__title">
+                    Детальний огляд
+                  </h4>
+                  <div class="item-work-third__text">
+                    Наші фахівці проводять детальний огляд, визначають ступінь тяжкості та вибирають найкращий спосіб
+                    хімчистки.
+                  </div>
+                </article>
+               </div>
+               <div class="work-third__slide swiper-slide">
+                <article class="work-third__item item-work-third">
+                  <h4 class="item-work-third__title">
+                    Хімічна чистка
+                  </h4>
+                  <div class="item-work-third__text">
+                    Професійні миючі засоби наносяться на поверхню, залишаються на час для розкладання бруду, а потім
+                    ретельно видаляються разом із забрудненнями.
+                  </div>
+                </article>
+              </div>
+              <div class="work-third__slide swiper-slide">
+                <article class="work-third__item item-work-third">
+                  <h4 class="item-work-third__title">
+                    Фінальна перевірка
+                  </h4>
+                  <div class="item-work-third__text">
+                    Ми провели остаточну перевірку, щоб переконатися, що диван є чистим і гарантованим.
+                  </div>
+                </article>
+              </div>
+              <div class="work-third__slide swiper-slide">
+                <article class="work-third__item item-work-third">
+                  <h4 class="item-work-third__title">
+                    Підготовка
+                  </h4>
+                  <div class="item-work-third__text">
+                    Ми готуємо поверхню дивана, захищаємо навколишні предмети та підлогу, щоб уникнути пошкоджень.
+                  </div>
+                </article>
+              </div>
+              <div class="work-third__slide swiper-slide">
+                <article class="work-third__item item-work-third">
+                  <h4 class="item-work-third__title">
+                    Сушка та вентиляція
+                  </h4>
+                  <div class="item-work-third__text">
+                    Після хімчистки просушуємо та провітрюємо диван, щоб уникнути утворення плісняви та неприємних
+                    запахів.
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__enters-third enters-third">
+        <div class="enters-third__container">
+          <div class="enters-third__top">
+            <h2 class="enters-third__title title">
+              Вартість послуги
+            </h2>
+            <div class="enters-main__text">
+              <p>
+                Ціна на хімчистку дивана може залежати від багатьох факторів, включаючи:
+              </p>
+            </div>
+          </div>
+          <ul class="enters-third-grid">
+            <li class="enters-third-grid__item">
+              <article class="enters-third__item item-third">
+                <div class="item-third__images">
+                  <img src="@img/enters/15.svg" alt="Icon">
+                </div>
+                <div class="item-third__content">
+                  <h5 class="item-third__title">
+                    Розмір дивану
+                  </h5>
+                  <div class="item-third__text">
+                    Великі дивани вимагають більшого часу та ресурсів для хімчистки, що може підвищити вартість послуг.
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="enters-third-grid__item">
+              <article class="enters-third__item item-third">
+                <div class="item-third__images">
+                  <img src="@img/enters/19.svg" alt="Icon">
+                </div>
+                <div class="item-third__content">
+                  <h5 class="item-third__title">
+                    Тип тканин
+                  </h5>
+                  <div class="item-third__text">
+                    Різні тканини потребують різних підходів до чищення. Наприклад, натуральні тканини та штучні матеріали мають різні вимоги до обробки, які можуть впливати на вартість.
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="enters-third-grid__item">
+              <article class="enters-third__item item-third">
+                <div class="item-third__images">
+                  <img src="@img/enters/17.svg" alt="Icon">
+                </div>
+                <div class="item-third__content">
+                  <h5 class="item-third__title">
+                    Репутація компанії
+                  </h5>
+                  <div class="item-third__text">
+                    Маючи хорошу репутацію та стійкий досвід, ми можемо встановити більш високі ціни за свої послуги.
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="enters-third-grid__item">
+              <article class="enters-third__item item-third">
+                <div class="item-third__images">
+                  <img src="@img/enters/09.svg" alt="Icon">
+                </div>
+                <div class="item-third__content">
+                  <h5 class="item-third__title">
+                    Додаткові послуги
+                  </h5>
+                  <div class="item-third__text">
+                    Якщо ви робите замовлення додаткових послуг, такі як антибактеріальна обробка або видалення запахів, це може спричинити додаткові витрати.
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <button class="show-more__btn show-more-enters-third button_white">Всі послуги</button>
+        </div>
+      </section>
+      <section class="page__reviews reviews">
+        <div class="reviews__container">
+
+          <div class="reviews__top">
+            <h2 class="reviews__title title">Відгуки</h2>
+            <div class="reviews__controls">
+              <button type="button" class="reviews__arrow arrow reviews__arrow_left _icon-arrow-left"></button>
+              <button type="button" class="reviews__arrow arrow reviews__arrow_right _icon-arrow-right"></button>
+            </div>
+          </div>
+
+          <div class="slader__box box-reviews">
+            <div class="reviews__slider swiper">
+              <div class="reviews__swiper swiper-wrapper">
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <article class="slide-reviews__item">
+                    <div class="slide-reviews__top">
+                      <div class="slide-reviews__name">Олена</div>
+                      <div class="slide-reviews__stars">★★★★★</div>
+                    </div>
+                    <div class="slide-reviews__text">
+                      Професійна хімчистка дивана – це справжнє диво! Мій старий диван став як новий, плями зникли, а атмосфера в будинку стала свіжою та чистою. Велике дякую за чудову роботу!
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <article class="slide-reviews__item">
+                    <div class="slide-reviews__top">
+                      <div class="slide-reviews__name">Андрій</div>
+                      <div class="slide-reviews__stars">★★★★★</div>
+                    </div>
+                    <div class="slide-reviews__text">
+                      Замовив хімчистку дивана в цій компанії, результат перевершив очікування. Якість роботи на висоті, фахівці з висоти та швидко впоралися з роботою. Рекомендую!
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <article class="slide-reviews__item">
+                    <div class="slide-reviews__top">
+                      <div class="slide-reviews__name">Марія</div>
+                      <div class="slide-reviews__stars">★★★★★</div>
+                    </div>
+                    <div class="slide-reviews__text">
+                      Дуже задоволена! Мій диван після хімчистки став чистішим і свіжішим, ніби щойно купила його. Професійний підхід та увага до деталей порадували.
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <article class="slide-reviews__item">
+                    <div class="slide-reviews__top">
+                      <div class="slide-reviews__name">Олена</div>
+                      <div class="slide-reviews__stars">★★★★★</div>
+                    </div>
+                    <div class="slide-reviews__text">
+                      Професійна хімчистка дивана – це справжнє диво! Мій старий диван став як новий, плями зникли, а атмосфера в будинку стала свіжою та чистою. Велике дякую за чудову роботу!
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews__buttons">
+            <a class="reviews__btn button_white" href="vidhuky.html">Всі відгуки</a>
+            <a class="reviews__btn button popup-link" href="#popup-rev">Залишити відгук</a>
+          </div>
+
+        </div>
+      </section>
+      <section class="page__accordion accordion">
+        <div class="accordion__container">
+          <h2 class="accordion__title title">Поширені питання</h2>
+
+          <div class="accordion__body">
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Що таке хімчистка дивану?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Хімічна чистка дивана - це процес очищення меблевої оббивки з використанням спеціалізованих американських засобів та спрямований на видалення бруду, плям та запахів.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Як часто слід проводити хімчистку дивану?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Хімічна чистка дивана - це процес очищення меблевої оббивки з використанням спеціалізованих американських засобів та спрямований на видалення бруду, плям та запахів.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Чи безпечна хімчистка для домашніх тварин та дітей?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Хімічна чистка дивана - це процес очищення меблевої оббивки з використанням спеціалізованих американських засобів та спрямований на видалення бруду, плям та запахів.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Чи можна самостійно провести хімчистку дивану?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Хімічна чистка дивана - це процес очищення меблевої оббивки з використанням спеціалізованих американських засобів та спрямований на видалення бруду, плям та запахів.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Як довго висихатиме диван після хімчистки?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Хімічна чистка дивана - це процес очищення меблевої оббивки з використанням спеціалізованих американських засобів та спрямований на видалення бруду, плям та запахів.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__other other">
+        <div class="other__container">
+          <div class="other__top">
+            <h2 class="other__title title">Інші послуги</h2>
+            <div class="other__controls">
+              <button type="button" class="other__arrow arrow other__arrow_left _icon-arrow-left"></button>
+              <button type="button" class="other__arrow arrow other__arrow_right _icon-arrow-right"></button>
+            </div>
+          </div>
+          <div class="slader__box box-other">
+            <div class="other__slider swiper">
+              <div class="other__swiper swiper-wrapper">
+                <div class="other__slide swiper-slide">
+                  <article class="other__item item-other">
+                    <div class="item-other__images">
+                      <img src="@img/other/01.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Прибирання офісів</h4>
+                  </article>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <article class="other__item item-other">
+                    <div class="item-other__images">
+                      <img src="@img/other/02.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Прибирання домів</h4>
+                  </article>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <article class="other__item item-other">
+                    <div class="item-other__images">
+                      <img src="@img/other/03.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Прибирання після ремонту</h4>
+                  </article>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <article class="other__item item-other">
+                    <div class="item-other__images">
+                      <img src="@img/other/04.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Генеральне прибирання</h4>
+                  </article>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <article class="other__item item-other">
+                    <div class="item-other__images">
+                      <img src="@img/other/05.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Мийка вікон</h4>
+                  </article>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <article class="other__item item-other">
+                    <div class="item-other__images">
+                      <img src="@img/other/06.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Хімчистка диванів</h4>
+                  </article>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <article class="other__item item-other">
+                    <div class="item-other__images">
+                      <img src="@img/other/07.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Хімчистка матрасів</h4>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="other-grid">
+            <li class="other-grid__item">
+              <article class="other__item item-other">
+                <div class="item-other__images">
+                  <img src="@img/other/01.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Прибирання офісів</h4>
+              </article>
+            </li>
+            <li class="other-grid__item">
+              <article class="other__item item-other">
+                <div class="item-other__images">
+                  <img src="@img/other/02.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Прибирання домів</h4>
+              </article>
+            </li>
+            <li class="other-grid__item">
+              <article class="other__item item-other">
+                <div class="item-other__images">
+                  <img src="@img/other/03.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Прибирання після ремонту</h4>
+              </article>
+            </li>
+            <li class="other-grid__item">
+              <article class="other__item item-other">
+                <div class="item-other__images">
+                  <img src="@img/other/04.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Генеральне прибирання</h4>
+              </article>
+            </li>
+            <li class="other-grid__item">
+              <article class="other__item item-other">
+                <div class="item-other__images">
+                  <img src="@img/other/05.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Мийка вікон</h4>
+              </article>
+            </li>
+            <li class="other-grid__item">
+              <article class="other__item item-other">
+                <div class="item-other__images">
+                  <img src="@img/other/06.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Хімчистка диванів</h4>
+              </article>
+            </li>
+            <li class="other-grid__item">
+              <article class="other__item item-other">
+                <div class="item-other__images">
+                  <img src="@img/other/07.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Хімчистка матрасів</h4>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="page__contact contact">
+        <div class="contact__container">
+          <div class="contact__body">
+            <div class="contact__content">
+              <h3 class="contact__title">Звʼязатися з нами</h3>
+              <div class="contact__text">
+                <p>
+                  Приведи свій диван до ладу за допомогою професійних послуг "Хімчистка диванів" від нашої клінінгової компанії. Ми гарантуємо бездоганну якість, гарантовані результати та турботу про майбутній комфорт та здоров'я. Відновіть первозданний вигляд своїх меблів та створіть очікуваний результат у майбутньому будинку. Зробіть замовлення прямо зараз та відчуйте відмінності!
+                </p>
+              </div>
+            </div>
+            <form class="contact__form form" action="#">
+              <div class="form__item">
+                <label for="formName" class="form__label">Імʼя *</label>
+                <input id="formName" type="text" name="name" class="form__input" placeholder="Олег" required>
+              </div>
+              <div class="form__item">
+                <label for="formPhone" class="form__label">Номер телефону *</label>
+                <input id="formPhone" type="tel" name="phone" class="form__input" placeholder="+38 (0__) ____ __ __"
+                  required>
+              </div>
+              <div class="form__item">
+                <div class="checkbox">
+                  <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+                  <label for="formAgreement" class="checkbox__label"><span>Дозволяю використовувати мою особисту
+                      інформацію</span></label>
+                </div>
+              </div>
+              <button type="submit" class="form__button button">Надіслати</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html',{})
+  </div>
+  @@include('html/popup.html',{})
+  @@include('html/phone-button.html',{})
+  <script src="js/app.min.js"></script>
+
+</body>
+
+</html>
