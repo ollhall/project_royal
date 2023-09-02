@@ -22,9 +22,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-         @include adaptiv-value("gap", 25, 15, 1);
-         @include adaptiv-value("min-height", 80, 60, 1);
-         padding: rem(10) 0;
+        @include adaptiv-value("gap", 25, 15, 1);
+        @include adaptiv-value("min-height", 80, 60, 1);
+        padding: rem(10) 0;
     }
 
     // .header__logo
@@ -54,6 +54,11 @@
                     text-decoration: underline;
                 }
             }
+            @media (max-width: $mobile) {
+                &:not(:last-child) {
+                    margin-bottom: rem(5);
+                }
+            }
         }
         &::before {
             content: "";
@@ -65,9 +70,6 @@
             left: 0;
             top: 50%;
             transform: translate(0, -50%);
-        }
-        @media (max-width: $mobile) {
-            display: none;
         }
     }
     &__btn-burg {
@@ -227,6 +229,9 @@
             &::before {
                 transform: rotate(-90deg);
             }
+            @media (max-width: $mobile) {
+                color: $mainBlue;
+            }
         }
         @media (max-width: $mobile) {
             width: rem(250);
@@ -237,13 +242,15 @@
     // .spollers-menu__body
 
     &__body {
-        position: absolute;
-        background-color: $mainWhite;
-        padding: rem(10);
+        padding: rem(16);
         top: rem(25);
-        border-radius: rem(7);
-        box-shadow: 0px rem(4) rem(21) rgba(198, 198, 198, 0.25);
         z-index: 2;
+        @media (min-width: $mobile) {
+            position: absolute;
+            background-color: $mainWhite;
+            box-shadow: 0px rem(4) rem(21) rgba(198, 198, 198, 0.25);
+            padding: rem(24) rem(40);
+        }
     }
 }
 //=============================================================
@@ -272,8 +279,6 @@
         height: rem(33);
         background-image: url(../img/arrow-top.svg);
         background-repeat: no-repeat;
-       
-        
     }
     @media (max-width: em(1200)) {
         display: none;

@@ -3,6 +3,7 @@
 .dropdown {
     position: relative;
     max-width: rem(50);
+    z-index: 7;
     &__button {
         display: flex;
         align-items: center;
