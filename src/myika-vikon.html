@@ -589,20 +589,21 @@
                 </p>
               </div>
             </div>
-            <form class="contact__form form" action="#">
+
+            <form class="contact__form form" action="#" id="contactForm">
               <div class="form__item">
                 <label for="formName" class="form__label">Імʼя *</label>
-                <input id="formName" type="text" name="name" class="form__input" placeholder="Олег" required>
-
+                <input id="formName" type="text" name="name" class="form__input" placeholder="Олег">
+                <span id="nameError" class="error"></span>
               </div>
               <div class="form__item">
                 <label for="formPhone" class="form__label">Номер телефону *</label>
-                <input id="formPhone" type="tel" name="phone" class="form__input" placeholder="+38 (0__) ____ __ __"
-                  required>
+                <input id="formPhone" type="tel" name="phone" class="form__input" placeholder="+38 (0__) ____ __ __">
+                <span id="phoneError" class="error"></span>
               </div>
               <div class="form__item">
                 <div class="checkbox">
-                  <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+                  <input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input">
                   <label for="formAgreement" class="checkbox__label"><span>Дозволяю використовувати мою особисту
                       інформацію</span></label>
                 </div>
@@ -610,9 +611,7 @@
               <button type="submit" class="form__button button">Надіслати</button>
             </form>
 
-           
 
-          
 
           </div>
         </div>

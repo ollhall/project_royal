@@ -118,22 +118,19 @@
                 </p>
               </div>
             </div>
-            <form class="contact__form form" action="#">
+            <form class="contact__form form" action="#" id="revForm">
               <div class="form__item">
                 <label for="formName" class="form__label">Імʼя *</label>
-                <input id="formName" type="text" name="name" class="form__input" placeholder="Олег" required>
+                <input id="formName" type="text" name="name" class="form__input" placeholder="Олег">
+                <span id="nameError" class="error"></span>
               </div>
               <div class="form__item">
                 <label for="formMessage" class="form__label">Опис *</label>
-                <textarea name="message" id="formMessage" class="form__input" placeholder="Напишіть свій відгук"
-                  required></textarea>
+                <textarea name="message" id="formMessage" class="form__input" placeholder="Напишіть свій відгук"></textarea>
+                <span id="messageError" class="error"></span>
               </div>
               <button type="submit" class="form__button button">Надіслати</button>
             </form>
-
-          
-
-
           </div>
         </div>
       </section>

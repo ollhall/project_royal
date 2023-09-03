@@ -3589,7 +3589,7 @@ textarea.form__input {
   height: 1.5rem;
   position: absolute;
   top: 0.1875rem;
-  left: 0.1875rem;
+  left: 0.125rem;
   background-image: url(../img/form-check.svg);
   background-repeat: no-repeat;
   opacity: 0;
@@ -3602,12 +3602,11 @@ textarea.form__input {
   visibility: visible;
 }
 
-.error-message {
+.error {
   color: #ff1f00;
   font-family: Raleway;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 140%;
 }
 
 .work-third__title {
