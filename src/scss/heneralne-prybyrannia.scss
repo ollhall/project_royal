@@ -255,26 +255,4 @@
         }
     }
 }
-@media (max-width: $mobileSmall) {
-    .inform-duble-grid-item:nth-child(n + 2) {
-        display: none;
-    }
-    .inform-duble-grid-item.is-visible {
-        display: block;
-    }
-}
-
-.show-more-inform-duble {
-    display: none;
-    @media (max-width: $mobileSmall) {
-        display: block;
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-        &::before{
-            font-size: rem(6);
-            margin-left: rem(5);
-        }
-    }
-}
 //=====================================

@@ -75,8 +75,8 @@ flsMyTabs.isMyTabs();
 // import * as flsHidden from "./modules/hidden.js";
 // flsHidden.isHidden();
 
-// import * as flsValidation from './modules/validation.js'
-// flsValidation.isValidation()
+import * as flsValidation from './modules/validation.js'
+flsValidation.isValidation()
 
 // import * as flsParallaxMouse from './modules/parallax-mouse.js'
 // flsParallaxMouse.isParallaxMouse()

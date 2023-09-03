@@ -131,15 +131,6 @@
         @include adaptiv-value("bottom", 15, 8, 1);
     }
 }
-@media (max-width: $mobileSmall) {
-    .enters-third-grid__item:nth-child(n + 4) {
-        display: none;
-    }
-    .enters-third-grid__item.is-visible {
-        display: block;
-    }
-}
-
 .show-more-enters-third{
     display: none;
     @media (max-width: $mobileSmall) {

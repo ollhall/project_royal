@@ -1204,14 +1204,6 @@ body._lock {
   }
 }
 
-.show-more__btn {
-  color: #006EB7;
-  font-size: 0.875rem;
-  font-weight: 600;
-  line-height: 120%;
-  margin-top: 1.5rem;
-}
-
 .dropdown {
   position: relative;
   max-width: 3.125rem;
@@ -1749,7 +1741,6 @@ body._lock {
 }
 @media (any-hover: hover) {
   .menu__sub-link:hover {
-    text-decoration: underline;
     color: #006EB7;
   }
 }
@@ -3197,31 +3188,6 @@ body._lock {
   margin-bottom: 0.9375em;
 }
 
-@media (max-width: 29.99875em) {
-  .inform-duble-grid-item:nth-child(n+2) {
-    display: none;
-  }
-
-  .inform-duble-grid-item.is-visible {
-    display: block;
-  }
-}
-.show-more-inform-duble {
-  display: none;
-}
-@media (max-width: 29.99875em) {
-  .show-more-inform-duble {
-    display: block;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-  }
-  .show-more-inform-duble::before {
-    font-size: 0.375rem;
-    margin-left: 0.3125rem;
-  }
-}
-
 .why-us-grid.why-us-grid_2 {
   display: none;
 }
@@ -3393,15 +3359,6 @@ body._lock {
   }
 }
 
-@media (max-width: 29.99875em) {
-  .enters-third-grid__item:nth-child(n+4) {
-    display: none;
-  }
-
-  .enters-third-grid__item.is-visible {
-    display: block;
-  }
-}
 .show-more-enters-third {
   display: none;
 }
@@ -3412,15 +3369,6 @@ body._lock {
   }
 }
 
-@media (max-width: 29.99875em) {
-  .why-us-grid__item-show:nth-child(n+4) {
-    display: none;
-  }
-
-  .why-us-grid__item-show.is-visible {
-    display: block;
-  }
-}
 .show-more-why-us {
   display: none;
 }
@@ -3586,6 +3534,9 @@ body._lock {
 .form__input::placeholder {
   color: #d9dada;
 }
+.form__input.error-border {
+  border: 0.0625rem solid #ff1f00;
+}
 .form__button {
   margin-top: 40px;
 }
@@ -3634,17 +3585,29 @@ textarea.form__input {
 .checkbox__label::after {
   transition: transform 0.3s ease 0s;
   content: "";
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   position: absolute;
-  top: 0.25rem;
-  left: 0.25rem;
-  background-color: #006EB7;
-  transform: scale(0);
+  top: 0.1875rem;
+  left: 0.1875rem;
+  background-image: url(../img/form-check.svg);
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
 }
 
 .checkbox__input:checked + .checkbox__label::after {
-  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.error-message {
+  color: #ff1f00;
+  font-family: Raleway;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 140%;
 }
 
 .work-third__title {

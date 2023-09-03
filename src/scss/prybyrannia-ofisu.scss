@@ -1,12 +1,3 @@
-@media (max-width: $mobileSmall) {
-    .why-us-grid__item-show:nth-child(n + 4) {
-        display: none;
-    }
-    .why-us-grid__item-show.is-visible {
-        display: block;
-    }
-}
-
 .show-more-why-us {
     display: none;
     @media (max-width: $mobileSmall) {
