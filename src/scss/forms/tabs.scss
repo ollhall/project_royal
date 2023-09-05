@@ -84,18 +84,18 @@
     pointer-events: none;
   }
   &__content {
+    @include adaptiv-value("width", 285, 170, 1);
     color: $mainBlue;
     font-family: Montserrat;
-    @include adaptiv-value("font-size", 16, 12, 1);
+    @include adaptiv-value("font-size", 16, 10, 1);
     font-weight: 400;
-    line-height: 160%;
-    white-space: nowrap;
+    line-height: normal;
     text-align: center;
     color: #636c81;
-    @include adaptiv-value("padding-top", 11, 6, 1);
-    @include adaptiv-value("padding-right", 11, 9, 1);
-    @include adaptiv-value("padding-bottom", 11, 6, 1);
-    @include adaptiv-value("padding-left", 11, 9, 1);
+    @include adaptiv-value("padding-top", 11, 5, 1);
+    @include adaptiv-value("padding-right", 11, 5, 1);
+    @include adaptiv-value("padding-bottom", 11, 5, 1);
+    @include adaptiv-value("padding-left", 11, 5, 1);
     background: #fff;
     opacity: 0.8;
     position: relative;
@@ -125,6 +125,9 @@
   &_1 {
     bottom: 3%;
     left: 16%;
+    @media (max-width: em(600)) {
+      left: 27%;
+    }
   }
   &_2 {
     bottom: 34%;
@@ -137,34 +140,70 @@
   &_4 {
     bottom: 28%;
     right: 4.5%;
+    @media (max-width: em(1350)) {
+      right: 10.5%;
+    }
+    @media (max-width: em(1050)) {
+      right: 35.5%;
+      bottom: 16%;
+    }
   }
   &_5 {
     bottom: 1%;
     left: 7%;
+    @media (max-width: em(1300)) {
+      left: 18%;
+    }
+    @media (max-width: em(500)) {
+      left: 26%;
+    }
   }
   &_6 {
     bottom: 75%;
     left: 47%;
+    @media (max-width: em(500)) {
+      bottom: 70%;
+    }
   }
   &_7 {
     bottom: 6%;
     left: 52%;
+    @media (max-width: em(500)) {
+      bottom: 2%;
+    }
   }
   &_8 {
     bottom: 29%;
     right: 29%;
+    @media (max-width: em(500)) {
+      bottom: 31%;
+    }
   }
   &_9 {
     bottom: 64%;
     right: 16.5%;
+    @media (max-width: em(500)) {
+      right: 27.5%;
+    }
   }
   &_10 {
     bottom: 26%;
     left: 7%;
+    @media (max-width: em(1300)) {
+      left: 18%;
+    }
+    @media (max-width: em(500)) {
+      left: 27%;
+      bottom: 2%;
+    }
   }
   &_11 {
     bottom: 35%;
     left: 23%;
+    @media (max-width: em(500)) {
+      bottom: 28%;
+      left: 27%;
+    }
   }
   &_12 {
     bottom: 78%;
@@ -181,6 +220,10 @@
   &_15 {
     bottom: 24%;
     left: 18%;
+    @media (max-width: em(500)) {
+      bottom: 2%;
+      left: 27%;
+    }
   }
   &_16 {
     bottom: 81%;
@@ -197,6 +240,16 @@
   &_19 {
     bottom: 42%;
     right: 7%;
+    @media (max-width: em(1300)) {
+      bottom: 60%;
+      right: 11%;
+    }
+    @media (max-width: $tablet) {
+      right: 20%;
+    }
+    @media (max-width: $mobileSmall) {
+      right: 26%;
+    }
   }
 }
 
