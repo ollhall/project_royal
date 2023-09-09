@@ -1,0 +1,26 @@
+
+.thanks-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.thanks {
+    // .thanks__container
+
+    &__container {
+    }
+
+    // .thanks__body
+
+    &__body {
+     
+    }
+
+    // .thanks__title
+
+    &__title {
+        font-weight: 700;
+        @include adaptiv-value("font-size", 40, 28, 1);
+        line-height: math.div(48, 40);
+    }
+}

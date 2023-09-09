@@ -621,6 +621,10 @@ body._lock {
     margin-bottom: calc(40px + 33 * ((100vw - 320px) / 880));
   }
 }
+.page__thanks {
+  margin-bottom: 2.5rem;
+  margin-top: 5rem;
+}
 
 .footer-title {
   color: #fff;
@@ -3980,5 +3984,22 @@ textarea.form__input {
 @media (max-width: 43.75em) {
   .rev-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+.thanks-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanks__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+}
+@media (max-width: 1200px) {
+  .thanks__title {
+    font-size: calc(28px + 12 * ((100vw - 320px) / 880));
   }
 }

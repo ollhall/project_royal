@@ -86,6 +86,10 @@
         @include adaptiv-value("padding-top", 113, 93, 1);
         @include adaptiv-value("margin-bottom", 73, 40, 1);
     }
+    &__thanks {
+        margin-bottom: rem(40);
+        margin-top: rem(80);
+    }
 }
 //</ОСНОВНОЙ БЛОК>===========================================
 

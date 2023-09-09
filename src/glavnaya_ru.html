@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":""
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html',{})
+    <main class="page" id="header">
+      <section class="page__cleaning cleaning">
+        <div class="cleaning__container">
+          <div class="cleaning__body">
+            <div class="cleaning__info info-cleaning">
+              <h1 class="info-cleaning__title title">Клінінг в Києві</h1>
+              <div class="info-cleaning__text">
+                <p>
+                  <span>Клінінгова компанія №1.</span> Надаємо допомогу у наведенні чистоти та порядку за доступною
+                  ціною.
+                </p>
+              </div>
+              <a class="info-cleaning__btn button popup-link" href="#popup-feedback">Замовити послугу</a>
+            </div>
+            <div class="cleaning__images images-cleaning">
+              <div class="images-cleaning__column column-images">
+                <div class="column-images__big-ibg">
+                  <img src="@img/cleaning/01.jpg" alt="Picture">
+                </div>
+                <div class="column-images__smoll-ibg">
+                  <img src="@img/cleaning/02.jpg" alt="Picture">
+                </div>
+
+              </div>
+              <div class="images-cleaning__column column-images">
+                <div class="column-images__smoll-ibg">
+                  <img src="@img/cleaning/03.jpg" alt="Picture">
+                </div>
+                <div class="column-images__big-ibg">
+                  <img src="@img/cleaning/04.jpg" alt="Picture">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__inform inform">
+        <div class="inform__container">
+          <div class="inform__body">
+            <div class="inform__images-ibg">
+              <img src="@img/inform/01.jpg" alt="Picture">
+            </div>
+            <div class="inform__content content-inform">
+              <h2 class="content-inform__title title">
+                Що треба знати про клінінг в Києві?
+              </h2>
+              <div class="content-inform__text">
+                <p>
+                  Чи замислювалися ви коли-небудь про професійний клінінг? Кожен знає, що прибирання будинку це
+                  складний, копіткий, процес, що забирає багато часу. Щоб прибрати в квартирі, потрібно натхнення,
+                  енергія і, звичайно ж, бажання, інакше все валитиметься з рук. У результаті ви витратите неабияку
+                  частку сил і нервів, і нічого до ладу не зробите. До того ж не кожен володіє специфічними знаннями та
+                  навичками, які необхідно задіяти, прибираючи вдома. Потрібно знати, як очистити скляну поверхню, що
+                  використовувати, як помити підлогу, які кошти підійдуть для того чи іншого покриття для підлоги.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__why-us why-us">
+        <div class="why-us__container">
+          <div class="why-us__top">
+            <h2 class="why-us__title title">Чому ми</h2>
+            <div class="why-us__controls">
+              <button type="button" class="why-us__arrow arrow why-us__arrow_left _icon-arrow-left"></button>
+              <button type="button" class="why-us__arrow arrow why-us__arrow_right _icon-arrow-right"></button>
+            </div>
+          </div>
+          <ul class="why-us-grid">
+            <li class="why-us-grid__item">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/01.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Професійність
+                  </h4>
+                  <p>
+                    Кандидати перевіряються експертами в галузі клінінгу, відібрані претенденти на посаду проходять
+                    навчання, складають тест та фінальний іспит.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/02.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Якісні матеріали
+                  </h4>
+                  <p>
+                    В роботі використовуємо продукцію від відомих та надійних виробників, яка підходить для експлуатації
+                    в будинках, де живуть діти, люди з алергією, тварини.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/03.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Контроль якості
+                  </h4>
+                  <p>
+                    Нам важливо здати об'єкт клієнту у бездоганному вигляді, тому якщо ми знаходимо помилки або
+                    замовника щось не влаштовує – одразу все виправляємо.
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="why-us-grid__item">
+              <article class="why-us__item">
+                <div class="why-us__images">
+                  <img src="@img/why-us/04.svg" alt="Icon">
+                </div>
+                <div class="why-us__content">
+                  <h4>
+                    Доступність 24/7
+                  </h4>
+                  <p>
+                    Якщо вам терміново потрібно прибрати приміщення, зробимо все можливе, щоб виконати замовлення на
+                    клінінг.
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="slader__box box-why-us">
+            <div class="why-us__slider swiper">
+              <div class="why-us__swiper swiper-wrapper">
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/01.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Професійність
+                      </h4>
+                      <p>
+                        Кандидати перевіряються експертами в галузі клінінгу, відібрані претенденти на посаду проходять
+                        навчання, складають тест та фінальний іспит.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/02.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Якісні матеріали
+                      </h4>
+                      <p>
+                        В роботі використовуємо продукцію від відомих та надійних виробників, яка підходить для
+                        експлуатації в будинках, де живуть діти, люди з алергією, тварини.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/03.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Контроль якості
+                      </h4>
+                      <p>
+                        Нам важливо здати об'єкт клієнту у бездоганному вигляді, тому якщо ми знаходимо помилки або
+                        замовника щось не влаштовує – одразу все виправляємо.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <div class="why-us__slide swiper-slide">
+                  <article class="why-us__item">
+                    <div class="why-us__images">
+                      <img src="@img/why-us/04.svg" alt="Icon">
+                    </div>
+                    <div class="why-us__content">
+                      <h4>
+                        Доступність 24/7
+                      </h4>
+                      <p>
+                        Якщо вам терміново потрібно прибрати приміщення, зробимо все можливе, щоб виконати замовлення на
+                        клінінг.
+                      </p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__how how">
+        <div class="how__container">
+          <div class="how__top">
+            <h2 class="how__title title">
+              Як ми прибираємо?
+            </h2>
+            <div class="how__text">
+              <p>
+                Коли обумовлено деталі, погоджено час та місце, клінер чи бригада співробітників приїжджає за адресою з
+                інструментами та засобами та приступає до роботи. Плата за клінінг здійснюється лише після того, як
+                робота була схвалена.
+              </p>
+            </div>
+          </div>
+
+          <div data-tabs="tab" class="how__body">
+            <ul data-spoller="" class="tabs__nav" tabindex="-1" role="tablist">
+              <button class="tabs__nav-btn" type="button" role="tab" id="tab1" aria-selected="true">Кухня</button>
+              <button class="tabs__nav-btn" type="button" role="tab" id="tab2" tabindex="-1">Ванна</button>
+              <button class="tabs__nav-btn" type="button" role="tab" id="tab3" tabindex="-1">Спальня</button>
+              <button class="tabs__nav-btn" type="button" role="tab" id="tab4" tabindex="-1">Кімнати</button>
+            </ul>
+            <div class="tabs__content">
+              <div class="tabs__panel panel-tabs tabs__panel--active" role="tabpanel" tabindex="-1"
+                aria-labelledby="tab1">
+                <div class="panel-tabs__wrapper">
+                  <div class="panel-tabs__images-ibg">
+                    <img src="@img/tab/01.jpg" alt="Picture">
+                  </div>
+                  <div class="item-tabs item-tabs_1">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо кахель</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_2">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо кахель</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_3">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо кахель</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_4">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо кахель</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="tabs__panel panel-tabs" role="tabpanel" tabindex="-1" aria-labelledby="tab2">
+                <div class="panel-tabs__wrapper">
+                  <div class="panel-tabs__images-ibg">
+                    <img src="@img/tab/02.jpg" alt="Picture">
+                  </div>
+                  <div class="item-tabs item-tabs_5">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо дзеркала</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_6">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо дзеркала</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_7">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо дзеркала</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_8">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо дзеркала</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_9">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо дзеркала</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="tabs__panel panel-tabs" role="tabpanel" tabindex="-1" aria-labelledby="tab3">
+                <div class="panel-tabs__wrapper">
+                  <div class="panel-tabs__images-ibg">
+                    <img src="@img/tab/03.jpg" alt="Picture">
+                  </div>
+                  <div class="item-tabs item-tabs_10">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо підлогу</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_11">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо підлогу</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_12">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо підлогу</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_13">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо підлогу</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_14">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо підлогу</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__panel panel-tabs" role="tabpanel" tabindex="-1" aria-labelledby="tab4">
+                <div class="panel-tabs__wrapper">
+                  <div class="panel-tabs__images-ibg">
+                    <img src="@img/tab/04.jpg" alt="Picture">
+                  </div>
+                  <div class="item-tabs item-tabs_15">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо підлогу</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_16">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо підлогу</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_17">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо підлогу</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_18">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо підлогу</div>
+                    </div>
+                  </div>
+                  <div class="item-tabs item-tabs_19">
+                    <img class="item-tabs__img" src="@img/plus.svg" alt="Icon">
+                    <div class="item-tabs__wrap">
+                      <div class="item-tabs__content">Миємо та натираємо підлогу</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__enters-main enters-main">
+        <div class="enters-main__container">
+          <div class="enters-main__body">
+            <div class="enters-main__content">
+              <h2 class="enters-main__title title">
+                Що входить в наші послуги
+              </h2>
+              <div class="enters-main__text">
+                <p>
+                  На клінінг вартість розраховується за м2. Повну вартість клінінгу краще дізнаватися у менеджера. Йому
+                  варто розповісти про специфіку приміщення, що потрібно зробити і в які терміни. Ми завжди намагаємося
+                  організувати клінінг так, щоб ви заощадили та залишилися задоволені результатом.
+                </p>
+              </div>
+              <a class="enters-main__btn button popup-link" href="#popup-phone">Зателефонувати</a>
+            </div>
+            <div class="enters-main__calculation calculation">
+              <h4 class="calculation__title">Додаткові послуги</h4>
+              <ul class="calculation__list">
+                <li class="calculation__item item-calculation">
+                  <div class="item-calculation__text">Автомобіль (подача + 2 години роботи)</div>
+                  <div class="item-calculation__price">700 грн</div>
+                </li>
+                <li class="calculation__item item-calculation">
+                  <div class="item-calculation__text">Вантажники (2 години роботи)</div>
+                  <div class="item-calculation__price">600 грн</div>
+                </li>
+                <li class="calculation__item item-calculation">
+                  <div class="item-calculation__text">Коробки (10 штук по 70грн/шт)</div>
+                  <div class="item-calculation__price">700 грн</div>
+                </li>
+                <li class="calculation__item item-calculation">
+                  <div class="item-calculation__text">Стрейч плівка (1 рулон)</div>
+                  <div class="item-calculation__price">400 грн</div>
+                </li>
+                <li class="calculation__item item-calculation">
+                  <div class="item-calculation__text">Скотч (1 шт)</div>
+                  <div class="item-calculation__price">60 грн</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__reviews reviews">
+        <div class="reviews__container">
+
+          <div class="reviews__top">
+            <h2 class="reviews__title title">Відгуки</h2>
+            <div class="reviews__controls">
+              <button type="button" class="reviews__arrow arrow reviews__arrow_left _icon-arrow-left"></button>
+              <button type="button" class="reviews__arrow arrow reviews__arrow_right _icon-arrow-right"></button>
+            </div>
+          </div>
+
+          <div class="slader__box box-reviews">
+            <div class="reviews__slider swiper">
+              <div class="reviews__swiper swiper-wrapper">
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <article class="slide-reviews__item">
+                    <div class="slide-reviews__top">
+                      <div class="slide-reviews__name">Олена Шарій</div>
+                      <div class="slide-reviews__stars">★★★★★</div>
+                    </div>
+                    <div class="slide-reviews__text">
+                      Замовляли з чоловіком минулого місяця клінінг та не пошкодували. Хлопці вичистили всю квартиру,
+                      відмили старий диван з кількома застарілими плямами, які я ніяк не могла вивести, натерли
+                      дзеркала, які сяяли. Результат клінінгу приголомшливий, не думала, що квартира буквально сяятиме
+                      від чистоти.
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <article class="slide-reviews__item">
+                    <div class="slide-reviews__top">
+                      <div class="slide-reviews__name">Сергій Архипенко</div>
+                      <div class="slide-reviews__stars">★★★★★</div>
+                    </div>
+                    <div class="slide-reviews__text">
+                      Дякуємо команді клінерів за те, що ви зробили з нашою квартирою! Не люблю займатися збиранням, а
+                      квартира вже просила її почистити. Після клінінгу стали чистенькими підлоги, на шафах і поличках
+                      ні порошинки, на килимі жодної котушки або волосинки, посуд вимитий, раковина почищена (там було 3
+                      шари бруду!) лінінг на совість, що не може не радувати.
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <article class="slide-reviews__item">
+                    <div class="slide-reviews__top">
+                      <div class="slide-reviews__name">Олександра Сивош</div>
+                      <div class="slide-reviews__stars">★★★★★</div>
+                    </div>
+                    <div class="slide-reviews__text">
+                      Зробили ремонт і відразу постало питання, а як бути з брудом і пилом, які залишилися після нього?
+                      Порадили звернутися до цієї компанії. Бригада з клінінгу приїхала, як і домовлялися, ознайомилися
+                      з фронтом робіт і одразу приступили до справи. На все пішло кілька годин, прибиральники все
+                      вичистили, помили, відтерли плями фарби. Самі б не впоралися.
+                    </div>
+                  </article>
+                </div>
+                <div class="reviews__slide slide-reviews swiper-slide">
+                  <article class="slide-reviews__item">
+                    <div class="slide-reviews__top">
+                      <div class="slide-reviews__name">Олена Шарій</div>
+                      <div class="slide-reviews__stars">★★★★★</div>
+                    </div>
+                    <div class="slide-reviews__text">
+                      Замовляли з чоловіком минулого місяця клінінг та не пошкодували. Хлопці вичистили всю квартиру,
+                      відмили старий диван з кількома застарілими плямами, які я ніяк не могла вивести, натерли
+                      дзеркала, які сяяли. Результат клінінгу приголомшливий, не думала, що квартира буквально сяятиме
+                      від чистоти.
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews__buttons">
+            <a class="reviews__btn button_white" href="vidhuky.html">Всі відгуки</a>
+            <a class="reviews__btn button popup-link" href="#popup-rev">Залишити відгук</a>
+          </div>
+
+        </div>
+      </section>
+      <section class="page__accordion accordion">
+        <div class="accordion__container">
+          <h2 class="accordion__title title">Поширені питання</h2>
+
+          <div class="accordion__body">
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>У клінінг входить миття
+                  побутової техніки?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Так, на вимогу, це може бути виконано. Наприклад, знежирити мікрохвильову піч, промити всередині
+                      холодильник.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Скільки триває
+                  прибирання?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Так, на вимогу, це може бути виконано. Наприклад, знежирити мікрохвильову піч, промити всередині
+                      холодильник.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Щось потрібно від
+                  клієнта?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Так, на вимогу, це може бути виконано. Наприклад, знежирити мікрохвильову піч, промити всередині
+                      холодильник.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Ви працюєте з усіма типами
+                  забруднень?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Так, на вимогу, це може бути виконано. Наприклад, знежирити мікрохвильову піч, промити всередині
+                      холодильник.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Чи є різниця між генеральним
+                  прибиранням та прибиранням після ремонту?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Так, на вимогу, це може бути виконано. Наприклад, знежирити мікрохвильову піч, промити всередині
+                      холодильник.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion__spollers spollers" data-spollers>
+              <div class="spollers__item">
+                <button class="spollers__title" type="button" data-spoller>Чи потрібна підготовка до
+                  клінінгу?</button>
+                <div class="spollers__body">
+                  <div class="spollers__text">
+                    <p>
+                      Так, на вимогу, це може бути виконано. Наприклад, знежирити мікрохвильову піч, промити всередині
+                      холодильник.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__other other">
+        <div class="other__container">
+          <div class="other__top">
+            <h2 class="other__title title">Інші послуги</h2>
+            <div class="other__controls">
+              <button type="button" class="other__arrow arrow other__arrow_left _icon-arrow-left"></button>
+              <button type="button" class="other__arrow arrow other__arrow_right _icon-arrow-right"></button>
+            </div>
+          </div>
+          <div class="slader__box box-other">
+            <div class="other__slider swiper">
+              <div class="other__swiper swiper-wrapper">
+                <div class="other__slide swiper-slide">
+                  <a class="other__item item-other" href="prybyrannia-ofisu.html">
+                    <div class="item-other__images">
+                      <img src="@img/other/01.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Прибирання офісів</h4>
+                  </a>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <a class="other__item item-other" href="prybyrannia-kvartyry.html">
+                    <div class="item-other__images">
+                      <img src="@img/other/08.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Прибирання квартир</h4>
+                  </a>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <a class="other__item item-other" href="prybyrannia-domu.html">
+                    <div class="item-other__images">
+                      <img src="@img/other/02.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Прибирання домів</h4>
+                  </a>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <a class="other__item item-other" href="prybyrannia-remontu.html">
+                    <div class="item-other__images">
+                      <img src="@img/other/03.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Прибирання після ремонту</h4>
+                  </a>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <a class="other__item item-other" href="heneralne-prybyrannia.html">
+                    <div class="item-other__images">
+                      <img src="@img/other/04.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Генеральне прибирання</h4>
+                  </a>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <a class="other__item item-other" href="myika-vikon.html">
+                    <div class="item-other__images">
+                      <img src="@img/other/05.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Мийка вікон</h4>
+                  </a>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <a class="other__item item-other" href="khimchystka-dyvanu.html">
+                    <div class="item-other__images">
+                      <img src="@img/other/06.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Хімчистка диванів</h4>
+                  </a>
+                </div>
+                <div class="other__slide swiper-slide">
+                  <a class="other__item item-other" href="khimchystka-matratsu.html">
+                    <div class="item-other__images">
+                      <img src="@img/other/07.svg" alt="Icon">
+                    </div>
+                    <h4 class="item-other__title">Хімчистка матрасів</h4>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="other-grid">
+            <li class="other-grid__item">
+              <a class="other__item item-other" href="prybyrannia-ofisu.html">
+                <div class="item-other__images">
+                  <img src="@img/other/01.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Прибирання офісів</h4>
+              </a>
+            </li>
+             <li class="other-grid__item">
+              <a class="other__item item-other" href="prybyrannia-kvartyry.html">
+                <div class="item-other__images">
+                  <img src="@img/other/08.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Прибирання квартир</h4>
+              </a>
+            </li>
+            <li class="other-grid__item">
+              <a class="other__item item-other" href="prybyrannia-domu.html">
+                <div class="item-other__images">
+                  <img src="@img/other/02.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Прибирання домів</h4>
+              </a>
+            </li>
+            <li class="other-grid__item">
+              <a class="other__item item-other" href="prybyrannia-remontu.html">
+                <div class="item-other__images">
+                  <img src="@img/other/03.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Прибирання після ремонту</h4>
+              </a>
+            </li>
+            <li class="other-grid__item">
+              <a class="other__item item-other" href="heneralne-prybyrannia.html">
+                <div class="item-other__images">
+                  <img src="@img/other/04.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Генеральне прибирання</h4>
+              </a>
+            </li>
+            <li class="other-grid__item">
+              <a class="other__item item-other" href="myika-vikon.html">
+                <div class="item-other__images">
+                  <img src="@img/other/05.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Мийка вікон</h4>
+              </a>
+            </li>
+            <li class="other-grid__item">
+              <a class="other__item item-other" href="khimchystka-dyvanu.html">
+                <div class="item-other__images">
+                  <img src="@img/other/06.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Хімчистка диванів</h4>
+              </a>
+            </li>
+            <li class="other-grid__item">
+              <a class="other__item item-other" href="khimchystka-matratsu.html">
+                <div class="item-other__images">
+                  <img src="@img/other/07.svg" alt="Icon">
+                </div>
+                <h4 class="item-other__title">Хімчистка матрасів</h4>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="page__block-info block-info">
+        <div class="block-info__container">
+          <h2 class="block-info__title title">Послуги клінінгу в Києві</h2>
+          <div class="block-info__content content-block-info">
+            <p>
+              Якщо немає бажання вдаватися до подробиць прибирання, розбиратися в тонкощах та особливостях, є оптимальний варіант – замовити клінінг у Києві. Це популярна послуга, яка має попит у людей, зайнятих роботою та іншими справами, які цінують свій час. Якщо ви хочете присвячувати вільний годинник куди більш важливим справам, ніж пранню, протиранню меблів від пилу, миття посуду, тоді клінінг безперечно варто розглянути.
+            </p>
+            <h4>У чому полягає специфіка клінінгу квартири?</h4>
+            <p>
+              Це глобальна процедура, що складається з декількох етапів. Щоб зрозуміти, що вона вам справді потрібна, слід оцінити стан квартири. Навіть якщо вона справляє враження затишного житла, око може зачепитися за дрібні деталі, що потребують опрацювання.
+            </p>
+            <p>
+              Рекомендується проводити генеральне прибирання раз на кілька місяців. Так ви підтримуватимете доглянутий зовнішній вигляд житла. Бруд у квартирі шкідливий для здоров'я. Бактерії часто спричиняються до різних захворювань. Та й дихати пилом шкідливо для легень. А якщо у квартирі живуть маленькі діти чи тварини, то взагалі прибирання варто проводити частіше.
+            </p>
+            <p>
+              Клінінг за участю висококласних фахівців – гарна інвестиція у ваш час та комфорт, а також запорука бездоганного самопочуття. При замовленні клінінг сервісу в Києві можна бути впевненим, що фахівці приведуть у повний порядок квартиру, доведуть кожен її метр до блиску.
+            </p>
+            <p>
+              Під клінінгом мається на увазі цілий комплекс заходів, куди включено миття вікон та стін, чищення меблів та радіаторів. професійні клінери керуються основними принципами під час виконання клінінгу:
+            </p>
+            <ul>
+              <li>
+                починати з найдальшого від входу приміщення і рухатися по колу, напрямок руху не відіграє ролі - можна по, можна проти годинникової стрілки;
+              </li>
+              <li>
+                у кожній кімнаті починати з далекого від входу кута;
+              </li>
+              <li>
+                останнім етапом клінінгу завжди виступає наведення порядку на кухні та у ванній кімнаті;
+              </li>
+              <li>
+                прибирання проводиться у напрямку зверху вниз, а саме спочатку слід чистити стіни і підлогу, а в останню чергу - мити підлогу.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html',{})
+  </div>
+  @@include('html/popup.html',{})
+  @@include('html/phone-button.html',{})
+
+  <script src="js/app.min.js"></script>
+
+</body>
+
+</html>
