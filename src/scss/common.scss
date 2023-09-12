@@ -90,6 +90,12 @@
         margin-bottom: rem(40);
         margin-top: rem(80);
     }
+      // .page__error
+
+      &__error {
+         @include adaptiv-value("padding-top", 150, 120, 1);
+         @include adaptiv-value("padding-bottom", 96, 65, 1);
+    }
 }
 //</ОСНОВНОЙ БЛОК>===========================================
 
